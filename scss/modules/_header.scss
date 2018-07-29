@@ -1,0 +1,66 @@
+.header {
+     background: #f9f8fb;
+    &-menu {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 185px;
+    } 
+    &-nav__items {
+        display: flex;
+    }
+    &-nav__item {
+        font: 700 20px/147px $main-font;
+        margin: 0 19px;
+    }
+    &-nav__link {
+        text-decoration: none;
+        color: $black;
+        position: relative;
+        &--active::before, &:hover::before {
+            content: "";
+            @include size(100%, 3px);
+            background: $orange;
+            position:absolute;
+            top: -7px;
+            
+        }
+    }
+    &-title {
+    font: 900 60px/147px $main-font;    
+    } 
+    &-description {
+        width: 31%;
+        margin-bottom: 20px;
+    }
+    &-btn {
+        background: $orange;
+        margin-bottom: 405px;
+    }
+    &-scroll {
+        font-size: 40px;
+        color: $black;
+        position: relative;
+        left: calc(50% - 15px);
+        bottom: 70px;
+        cursor: pointer;
+
+    }
+    .container {
+    background: #f9f8fb url(../images/strawberry.jpg) top right no-repeat;
+    background-size: contain;
+}
+    
+}
+
+.col-header {
+    display: flex;
+    flex-direction: column;
+    
+}
+.logo {
+    font: 400 60px/112px Pacifico, cursive;
+    &__link {
+    text-decoration: none;
+    color: $black; 
+    }
+}
