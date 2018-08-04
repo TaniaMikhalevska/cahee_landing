@@ -33,6 +33,9 @@ body {
     font: 300 17px/27px $main-font;
     color: $black;
 }
+section, header {
+    width: 100%;
+}
 .container {
       width: 1200px;}
 .btn {
@@ -45,6 +48,10 @@ body {
     padding: 17px 0;
     text-align: center;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    &:hover {
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.6);
+        
+    }
 }
 
 .section__title--light {
@@ -54,4 +61,7 @@ body {
 .section__title--dark {
     font: 700 90px $main-font;
     color: $black;
+}
+a {
+    text-decoration: none;
 }

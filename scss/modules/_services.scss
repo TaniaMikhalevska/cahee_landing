@@ -1,0 +1,55 @@
+.services {
+    background: #70bfff;
+    &-list {
+       margin: 179px 0 151px 17%; 
+        &__item {
+          width: 85%;
+          background: $white;
+          margin-bottom: 20px;
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5); 
+            &:hover {
+                box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+                }
+                
+                  &:hover .services__icon {
+            color: $orange;
+                 }
+            
+            }
+        }
+    &__link {
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        color: $black;
+        padding: 27px 0;
+        position: relative;
+        &:after {
+            content: "";
+            @include pos($r:25%);
+            @include size(1px, 100%);
+            background: $black;
+        }
+    }
+    &__text {
+        width: 75%;
+        padding: 0 30px;
+        font: 700 20px $main-font;
+    }
+    &__icon {
+        margin: 0 auto;
+        padding: 0 25px;
+        font-size: 50px;
+      
+    }
+    &__img {
+        float: right;
+        margin-top: 100px;
+    }
+    & .section__title {
+        @include pos ($t: 50%, $r:0);
+    }
+}
+

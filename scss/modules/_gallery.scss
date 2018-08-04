@@ -1,0 +1,35 @@
+.gallery {
+    background: #ffe92f;
+    & .section__title--dark {
+        margin: 87px 0 38px;
+        text-align: center;
+    }
+    & .section__description {
+        text-align: center;
+        max-width: 630px;
+        margin: 0 auto 45px;
+    }
+    .img-wrapper {
+        height: 512px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+   
+    .col-8 .gallery-img {
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+    .col-4 .gallery-img,  .col-6 .gallery-img {
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    }
+   
+    &-img:hover {
+        transform: scale(1.05);
+    
+    }
+     .btn--gallery {
+        margin: 50px auto 120px;
+        background: #5585a2 ;
+    }
+}

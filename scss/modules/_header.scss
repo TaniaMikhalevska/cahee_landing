@@ -32,10 +32,6 @@
         width: 31%;
         margin-bottom: 20px;
     }
-    &-btn {
-        background: $orange;
-        margin-bottom: 405px;
-    }
     &-scroll {
         font-size: 40px;
         color: $black;
@@ -43,6 +39,9 @@
         left: calc(50% - 15px);
         bottom: 70px;
         cursor: pointer;
+        &:hover {
+            color: $orange;
+        }
 
     }
     .container {
@@ -52,7 +51,7 @@
     
 }
 
-.col-header {
+.col--header {
     display: flex;
     flex-direction: column;
     
@@ -64,3 +63,7 @@
     color: $black; 
     }
 }
+   .btn--header {
+        background: $orange;
+        margin-bottom: 405px;
+    }

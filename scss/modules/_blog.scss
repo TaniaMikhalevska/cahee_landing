@@ -1,0 +1,77 @@
+.blog {
+    background: #b07cf7;
+    color: #fff;
+    & .section__title {
+        margin-top: 93px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    & .section__description {
+        text-align: center;
+        margin-bottom: 47px;
+    }
+    &-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 25px;
+        padding-left: 20px;
+        margin-bottom: 50px;
+        height: 310px;
+        background: url("../images/blog1.jpg") no-repeat;
+        position: relative;
+        background-size: cover;
+    &::after {
+        background: -moz-linear-gradient(top, rgba(38,38,38,0.05) 0%, rgba(38,38,38,0.07) 57%, rgba(38,38,38,0.6) 75%, rgba(38,38,38,0.61) 76%, rgba(38,38,38,0.8) 100%);
+background: -webkit-linear-gradient(top, rgba(38,38,38,0.05) 0%,rgba(38,38,38,0.07) 57%,rgba(38,38,38,0.6) 75%,rgba(38,38,38,0.61) 76%,rgba(38,38,38,0.8) 100%);
+background: linear-gradient(to bottom, rgba(38,38,38,0.05) 0%,rgba(38,38,38,0.07) 57%,rgba(38,38,38,0.6) 75%,rgba(38,38,38,0.61) 76%,rgba(38,38,38,0.8) 100%);
+ content: "";
+    display: block;
+    @include size(100%);
+    @include pos($l: 0, $t: 0);
+ 
+    } 
+        &:hover {
+             box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+            transform: scale(1.05);
+        }
+        &--1 {
+            background: url("../images/blog1.jpg") no-repeat;
+        }
+         &--2 {
+            background: url("../images/blog2.jpg") bottom center no-repeat;
+        }
+         &--3 {
+            background: url("../images/blog3.jpg") no-repeat;
+        }
+        
+        &__date {
+            @include size(60px);
+            @include pos($l: 30px, $t: 30px);
+            border-radius: 3px;
+            background: rgba(0,0,0, 0.4);
+            font: 700 32px/25px $main-font;
+            text-align: center;
+        }
+        &__month {
+             font: 900 21px $main-font;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        &__author {
+            margin-top: 20px;
+             z-index: 2;
+        }
+        &__title {
+            font: 700 20px $main-font;
+            z-index: 2;
+        }
+        &__author-link, &__title-link {
+            color: $white;
+        }
+   }
+    .btn--blog {
+        background: #f72b3b;
+        margin: 0 auto 120px;
+    } 
+}
