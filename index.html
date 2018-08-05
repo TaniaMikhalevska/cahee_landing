@@ -8,6 +8,7 @@
 
 	<link rel="icon" href="images/favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 
 	<!--[if lt IE 9]>
@@ -37,13 +38,13 @@
                     <p class="header-description">
 Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                     <a href="#" class="btn btn--header">Get free now</a>
-                    <i class="icon-scroll header-scroll"></i>
+                   <a href="#about" class="header-scroll__link"> <i class="icon-scroll header-scroll"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </header>
-<section class="about-us">
+<section class="about-us" id="about">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -61,10 +62,10 @@ Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mi
         </div>
     </div>
 </section>
-<section class="services">
+<section class="services" id="services">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-6">
+            <div class="col-6">
                 <ul class="services-list">
                     <li class="services-list__item"><a href="#" class="services__link">
                             <p class="services__text">Online Shopping</p>
@@ -84,14 +85,14 @@ Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mi
                         </a></li>
                 </ul>
             </div>
-            <div class="col-6 col-lg-6">
+            <div class="col-6">
                       <h2 class="section__title section__title--light" id="services">Our Sevices</h2> 
                     <img src="images/tomato.png" alt="" class="services__img">
             </div>
         </div>
     </div>
 </section>
-<section class="gallery">
+<section class="gallery" id="gallery">
    <div class="container">
           <div class="row">
            <div class="col-12">
@@ -102,10 +103,10 @@ Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mi
        </div>
   
    <div class="row">
-       <div class="col-8 col-lg-8">
+       <div class="col-8">
            <img src="images/peach.jpg" alt="" class="gallery-img">
        </div>
-       <div class="col-4 col-lg-4">
+       <div class="col-4">
            <div class="img-wrapper">
            <img src="images/blueberry.jpg" alt="" class="gallery-img">
            <img src="images/berries.jpg" alt="" class="gallery-img">
@@ -113,8 +114,8 @@ Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mi
        </div>
    </div>
    <div class="row">
-       <div class="col-6 col-lg-6"><img src="images/milk.jpg" alt="" class="gallery-img"></div>
-       <div class="col-6 col-lg-6"><img src="images/hurma.jpg" alt="" class="gallery-img"></div>
+       <div class="col-6"><img src="images/milk.jpg" alt="" class="gallery-img"></div>
+       <div class="col-6"><img src="images/hurma.jpg" alt="" class="gallery-img"></div>
    </div>
    <div class="row">
        <div class="col-12">
@@ -126,25 +127,25 @@ Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mi
 <section class="subscribe">
     <div class="container">
         <div class="row">
-            <div class="col-3-6 col-lg-6">
+            <div class="col-6">
                 <h3 class="section-title--subscribe"> Subscribe to us</h3>
                 <p class="section__description">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-8 col-lg-8">
+            <div class="col-8">
               <form action="" class="subscribe-form">
-                    <input type="email" class="subscribe-form__field" placeholder="Your email adress...">
+                    <input type="email" class="subscribe-form__field" placeholder="Your email adress..." required>
                     <button class="subscribe-btn btn">Subscribe</button>
                 </form>  
             </div>
         </div>
     </div>
 </section>
-<section class="blog">
+<section class="blog" id="blog">
     <div class="container">
         <div class="row">
-            <div class="col-6 col-lg-6 col-offset-3 col-lg-offset-3">
+            <div class="col-6 offset-3">
                 <h2 class="section__title section__title--light">Blog</h2>
                 <p class="section__description">
                     Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
@@ -152,27 +153,27 @@ Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mi
             </div>
         </div>
         <div class="row">
-            <div class="col-4 col-lg-4">
+            <div class="col-4">
                 <div class="blog-item blog-item--1">
                     <p class="blog-item__date"> 20 <span class="blog-item__month"> nov</span></p>
                 <h5 class="blog-item__title"><a href="" class="blog-item__title-link">Green Smoothies: Too Much of a Good Thing?</a> </h5>
                 <p class="blog-item__author"><a href="" class="blog-item__author-link">By Auskteez</a> -<span class="blog-item__time"> 2 hours ago</span></p>
                 </div>
             </div>
-            <div class="col-4 col-lg-4">
+            <div class="col-4">
                 <div class="blog-item blog-item--2">
                     <p class="blog-item__date"> 14 <span class="blog-item__month"> nov</span></p>
                 <h5 class="blog-item__title"><a href="" class="blog-item__title-link">Growing Food and a “Thirst” for Innovation</a> </h5>
                 <p class="blog-item__author"><a href="" class="blog-item__author-link">By Auskteez</a> -<span class="blog-item__time"> 3 hours ago</span></p>
                 </div>
             </div>
-             <div class="col-4 col-lg-4">
+             <div class="col-4">
                 <div class="blog-item blog-item--3">
                     <p class="blog-item__date"> 10 <span class="blog-item__month"> nov</span></p>
                 <h5 class="blog-item__title"><a href="" class="blog-item__title-link">Pesticides & Food: What You Need to Know</a> </h5>
                 <p class="blog-item__author"><a href="" class="blog-item__author-link">By Auskteez</a> -<span class="blog-item__time"> 6 hours ago</span></p>
                 </div>
-            </div>
+            </div>f
         </div>
         <div class="row">
             <div class="col-12">
@@ -181,27 +182,62 @@ Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mi
         </div>
     </div>
 </section>
-<section class="contact">
-    <div class="row">
-        <div class="col-4 col-lg-4 col-offset-4 col-lg-offset-4">
-            <h2 class="section__title section__title--dark">Contact</h2>
-                <p class="section__description">
-                    For new projects, ideas, business or anything you'd like to discuss, contact with me!
-                </p>
-    
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 offset-4 ">
+                <h2 class="section__title section__title--dark">Contact</h2>
+                    <p class="section__description">
+                        For new projects, ideas, business or anything you'd like to discuss, contact with me!
+                    </p>
+        
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-6">
-        <form action="" class="contact-form">
-            <input type="text" class="contact-form__name" placeholder="Auskteez Tran">
-            <input type="email" class="contact-form__email" placeholder="Your email">
-        </form>
+        <div class="row">
+            <div class="col-6">
+            <form action="" class="contact-form">
+                <input type="text" class="contact-form__name" placeholder="Auskteez Tran" required>
+                <input type="email" class="contact-form__email" placeholder="Your email" required>
+                <input type="tel" class="contact-form__tel" placeholder="Your phone number..." required>
+                <textarea name="" id="" cols="" rows="" class="contact-form__message" placeholder="Your message..." required></textarea>
+            </form>
+            </div>
+            <div class="col-6">
+                <address class="contact-our">
+                    <p class="contact-our__title">Address</p>
+                    <p class="contact-our__info">123 City name, Street, City, Country</p>
+                     <p class="contact-our__title">Email</p>
+                    <p class="contact-our__info"><a href="mailto:cahee@domain.com" class="contact-our__link">cahee@domain.com</a></p>
+                     <p class="contact-our__title">Phone</p>
+                    <p class="contact-our__info"><a href="tel:+0123456789" class="contact-our__link">+012 345 678</a></p>
+                </address>
+            </div>
         </div>
-        <div class="col-lg-6"></div>
     </div>
 </section>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="footer-info">
+                    <li class="footer-info__item">© 2015 Company. All right reserved.</li>
+                    <li class="footer-info__item"><a href="/" class="logo logo--footer" title="Cahee">Cahee</a></li>
+                    <li class="footer-info__item">Made with <span class="footer-love">love</span> by Auskteez</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 <!-- LiveReload Script -->
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+	$('a').click(function(){
+	    $('html, body').animate({
+	        scrollTop: $( $.attr(this, 'href') ).offset().top
+	    }, 600);
+	    return false;
+	});
+</script>
 </body>
 </html>

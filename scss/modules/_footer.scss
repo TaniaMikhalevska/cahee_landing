@@ -1,0 +1,25 @@
+.footer {
+    background: $black;
+    &-info {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        color: $white-footer;
+   
+    &__item {
+        line-height: 90px;
+        }
+    }
+    &-love {
+        color: #ff2b58;
+    }
+    .logo--footer {
+        color: $white-footer;
+        font-size: 25px;
+        &:hover {
+            color: $white;
+            
+        }
+    }
+}

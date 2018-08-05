@@ -16,13 +16,16 @@
         text-decoration: none;
         color: $black;
         position: relative;
-        &--active::before, &:hover::before {
+        &::before {
             content: "";
-            @include size(100%, 3px);
+            @include size(0, 3px);
+            @include pos($t: -7px, $r: 50%, $l: 50%);
             background: $orange;
-            position:absolute;
-            top: -7px;
-            
+            transition: all .5s ease-in-out;
+        }
+        &--active::before, &:hover::before {
+            @include size(100%, 3px);
+            @include pos($t: -7px, $r: 0, $l: 0); 
         }
     }
     &-title {
@@ -61,6 +64,9 @@
     &__link {
     text-decoration: none;
     color: $black; 
+        &:hover {
+            color: $orange;
+        }
     }
 }
    .btn--header {

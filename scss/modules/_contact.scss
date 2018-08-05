@@ -1,0 +1,54 @@
+.contact {
+    background: url(../images/contact.jpg) no-repeat;
+    background-size: cover;
+    & .section__title, & .section__description {
+        text-align: center;
+    }
+    & .section__title {
+        margin-top: 90px;
+    }
+    &-form {
+        margin-top: 45px;
+        margin-bottom: 120px;
+    }
+    &-form input, &-form textarea  {
+        width: 86%;
+        padding: 18px 22px;
+        margin-bottom: 15px;
+        background-color: rgba(0, 196, 196, 0.5);
+        color: $white;
+        font: 700 15px $main-font;
+        border-left: 5px solid transparent;
+        cursor: pointer;
+    }
+    &-form input:hover, &-form textarea:hover, &-form input:focus, &-form__message:focus {
+        background: rgba(0, 196, 196, 1); 
+        border-left: 5px solid #355b82;
+        transition: all .6s ease-in-out;
+    }
+    &-form input::placeholder, &-form__message::placeholder {
+        font: 300 15px $main-font;
+        color: $white;
+    }
+    &-form__message {
+        resize: vertical;
+        transition: none;
+        min-height: 250px;
+       
+    }
+    &-our {
+        margin-top: 45px;
+        margin-left: 12%;
+        &__title {
+            text-transform: uppercase;
+            font: 700 17px $main-font;
+        }
+        &__info {
+            font: 300 20px $main-font;
+            margin-bottom: 14px;
+        }
+        &__link {
+            color: $black;
+        }
+    }
+}
